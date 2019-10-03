@@ -30,7 +30,8 @@
     "string.fromcodepoint": "^0.2.1",
     "styled-components": "^3.4.4",
     "throttle-debounce": "^2.0.1",
-    "whatwg-fetch": "^2.0.4"
+    "whatwg-fetch": "^2.0.4",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
@@ -49,7 +50,9 @@
     "test:e2e": "cross-env E2E=true detox test -c ios.sim --platform ios",
     "test:unit": "jest . --passWithNoTests",
     "test": "yarn test:unit && yarn test:e2e",
-    "clean": "rm -rf yarn.lock node_modules && yarn && watchman watch-del-all && rm -fr $TMPDIR/react-*"
+    "clean": "rm -rf yarn.lock node_modules && yarn && watchman watch-del-all && rm -fr $TMPDIR/react-*",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "detox": {
     "test-runner": "jest",
@@ -62,5 +65,6 @@
         "name": "iPhone 8"
       }
     }
-  }
+  },
+  "snyk": true
 }
