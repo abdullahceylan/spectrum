@@ -466,6 +466,13 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.6"
 
+argparse@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
+  integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  dependencies:
+    sprintf-js "~1.0.2"
+
 argparse@^1.0.7:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.9.tgz#73d83bc263f86e97f8cc4f6bae1b0e90a7d22c86"
@@ -613,6 +620,13 @@ asynckit@^0.4.0:
 atob@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.0.3.tgz#19c7a760473774468f20b2d2d03372ad7d4cbf5d"
+
+autolinker@^3.11.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/autolinker/-/autolinker-3.14.0.tgz#70f01bc0fb8be8b2340480df7f323abe04ee4b3f"
+  integrity sha512-4b9rvvEkeCC0v/vUtsEyTGrZz2ltGZFqJvifSFlegeTP1q8549jFoohJPqxvAeS9cVa64JlZiXA9Q51G9iti7w==
+  dependencies:
+    tslib "^1.9.3"
 
 autolinker@~0.15.0:
   version "0.15.3"
@@ -5082,11 +5096,12 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-markdown-draft-js@^0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/markdown-draft-js/-/markdown-draft-js-0.6.3.tgz#5847cd3d07d7b7e3d4d87c5d7e5928c3a71bddd4"
+markdown-draft-js@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/markdown-draft-js/-/markdown-draft-js-2.2.0.tgz#1a4796c4d7907761ae417e2176ab858dfaa1166a"
+  integrity sha512-OW53nd5m7KrnuXjH8jNKB3SQ5KidKD/+pHS+3daVKTsyjsiozghjUxzNH+5JLxzaBECHmJ7itE39RzMgYm5EFQ==
   dependencies:
-    remarkable "1.7.1"
+    remarkable "2.0.0"
 
 md5.js@^1.3.4:
   version "1.3.4"
@@ -6493,7 +6508,15 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
-remarkable@1.7.1, remarkable@^1.x:
+remarkable@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/remarkable/-/remarkable-2.0.0.tgz#795f965bede8300362ce51a716edc322d9e7a4ca"
+  integrity sha512-3gvKFAgL4xmmVRKAMNm6UzDo/rO2gPVkZrWagp6AXEA4JvCcMcRx9aapYbb7AJAmLLvi/u06+EhzqoS7ha9qOg==
+  dependencies:
+    argparse "^1.0.10"
+    autolinker "^3.11.0"
+
+remarkable@^1.x:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/remarkable/-/remarkable-1.7.1.tgz#aaca4972100b66a642a63a1021ca4bac1be3bff6"
   dependencies:
@@ -7438,6 +7461,11 @@ truncate-utf8-bytes@^1.0.0:
   resolved "https://registry.yarnpkg.com/truncate-utf8-bytes/-/truncate-utf8-bytes-1.0.2.tgz#405923909592d56f78a5818434b0b78489ca5f2b"
   dependencies:
     utf8-byte-length "^1.0.1"
+
+tslib@^1.9.3:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
+  integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
 
 tty-browserify@0.0.0:
   version "0.0.0"
