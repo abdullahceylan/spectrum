@@ -49,13 +49,21 @@ cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
 
-core-js@^1.0.0:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
-
 core-js@^2.4.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.5.tgz#b14dde936c640c0579a6b50cabcc132dd6127e3b"
+
+core-js@^3.6.4:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
+
+cross-fetch@^3.0.4:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.6.tgz#3a4040bc8941e653e0e9cf17f29ebcd177d3365c"
+  integrity sha512-KBPUbqgFjzWlVcURG+Svp9TlhA5uliYtiNx/0r8nv0pdypeQCRJ9IaSIc3q/x3q8t3F75cHuwxVql1HFGHCNJQ==
+  dependencies:
+    node-fetch "2.6.1"
 
 crypt@~0.0.1:
   version "0.0.2"
@@ -71,23 +79,18 @@ dom-walk@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
 
-draft-js@^0.10.3:
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.5.tgz#bfa9beb018fe0533dbb08d6675c371a6b08fa742"
+draft-js@^0.11.7:
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.11.7.tgz#be293aaa255c46d8a6647f3860aa4c178484a206"
+  integrity sha512-ne7yFfN4sEL82QPQEn80xnADR8/Q6ALVworbC5UOSzOvjffmYfFsr3xSZtxbIirti14R7Y33EZC5rivpLgIbsg==
   dependencies:
-    fbjs "^0.8.15"
+    fbjs "^2.0.0"
     immutable "~3.7.4"
-    object-assign "^4.1.0"
+    object-assign "^4.1.1"
 
 emoji-regex@^6.1.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-6.5.1.tgz#9baea929b155565c11ea41c6626eaa65cef992c2"
-
-encoding@^0.1.11:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
-  dependencies:
-    iconv-lite "~0.4.13"
 
 envify@^4.0.0:
   version "4.1.0"
@@ -108,17 +111,24 @@ events@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
 
-fbjs@^0.8.15:
-  version "0.8.16"
-  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
+fbjs-css-vars@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fbjs-css-vars/-/fbjs-css-vars-1.0.2.tgz#216551136ae02fe255932c3ec8775f18e2c078b8"
+  integrity sha512-b2XGFAFdWZWg0phtAWLHCk836A1Xann+I+Dgd3Gk64MHKZO44FfoD1KxyvbSh0qZsIoXQGGlVztIY+oitJPpRQ==
+
+fbjs@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-2.0.0.tgz#01fb812138d7e31831ed3e374afe27b9169ef442"
+  integrity sha512-8XA8ny9ifxrAWlyhAbexXcs3rRMtxWcs3M0lctLfB49jRDHiaxj+Mo0XxbwE7nKZYzgCFoq64FS+WFd4IycPPQ==
   dependencies:
-    core-js "^1.0.0"
-    isomorphic-fetch "^2.1.1"
+    core-js "^3.6.4"
+    cross-fetch "^3.0.4"
+    fbjs-css-vars "^1.0.0"
     loose-envify "^1.0.0"
     object-assign "^4.1.0"
     promise "^7.1.1"
     setimmediate "^1.0.5"
-    ua-parser-js "^0.7.9"
+    ua-parser-js "^0.7.18"
 
 foreach@^2.0.5:
   version "2.0.5"
@@ -130,10 +140,6 @@ global@^4.3.2:
   dependencies:
     min-document "^2.19.0"
     process "~0.5.1"
-
-iconv-lite@~0.4.13:
-  version "0.4.19"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
 
 immutable@~3.7.4:
   version "3.7.6"
@@ -147,20 +153,9 @@ is-buffer@~1.1.1:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
 
-is-stream@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
-
 isarray@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-2.0.2.tgz#5aa99638daf2248b10b9598b763a045688ece3ee"
-
-isomorphic-fetch@^2.1.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
-  dependencies:
-    node-fetch "^1.0.1"
-    whatwg-fetch ">=0.10.0"
 
 js-tokens@^3.0.0:
   version "3.0.2"
@@ -202,18 +197,16 @@ node-env-file@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/node-env-file/-/node-env-file-0.1.8.tgz#fccb7b050f735b5a33da9eb937cf6f1ab457fb69"
 
-node-fetch@^1.0.1:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
-  dependencies:
-    encoding "^0.1.11"
-    is-stream "^1.0.1"
+node-fetch@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 now-env@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/now-env/-/now-env-3.1.0.tgz#e0198b67279d387229cfd4b25de4c2fc7156943f"
 
-object-assign@^4.1.0:
+object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
@@ -315,14 +308,11 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-ua-parser-js@^0.7.9:
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
+ua-parser-js@^0.7.18:
+  version "0.7.22"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.22.tgz#960df60a5f911ea8f1c818f3747b99c6e177eae3"
+  integrity sha512-YUxzMjJ5T71w6a8WWVcMGM6YWOTX27rCoIQgLXiWaxqXSx9D7DNjiGWn1aJIRSQ5qr0xuhra77bSIh6voR/46Q==
 
 uuid@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.0.tgz#6728fc0459c450d796a99c31837569bdf672d728"
-
-whatwg-fetch@>=0.10.0:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
