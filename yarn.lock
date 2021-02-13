@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@amplitude/ua-parser-js@0.7.11":
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/@amplitude/ua-parser-js/-/ua-parser-js-0.7.11.tgz#e3e411912aa88b1832ce3fb4dd4996839bd39243"
+  integrity sha512-uBYLbl5dRh0w7yWATTiKwfzae4EU6B/jHK6xsY8vRgbNEfwJZLG44Z18B1sBGjeaUYCk2nP8lWNehKGeQf3jgw==
+
 "@babel/code-frame@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.44.tgz#2a02643368de80916162be70865c97774f3adbd9"
@@ -140,13 +145,6 @@
     lodash "^4.17.4"
     node-fetch "^2.1.1"
     url-template "^2.0.8"
-
-"@segment/top-domain@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@segment/top-domain/-/top-domain-3.0.0.tgz#02e5a5a4fd42a9f6cf886b05e82f104012a3c3a7"
-  dependencies:
-    component-cookie "^1.1.2"
-    component-url "^0.2.1"
 
 "@types/accepts@*":
   version "1.3.5"
@@ -474,15 +472,15 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-amplitude-js@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/amplitude-js/-/amplitude-js-4.2.1.tgz#539f5aaf312c1a56fec3946370e8dfa7ed185de1"
+amplitude-js@^4.6.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/amplitude-js/-/amplitude-js-4.7.0.tgz#82a3f23d0dbe0e7ad3e319a974bd102389713fbb"
+  integrity sha512-4ZlJjZafznb6TDh/Bwr2DYWDDmivsrayqXoCK5p/1T59eqNHuEea41QwWde4S7kKz+CEeq4piaCS3sTQT1jJRg==
   dependencies:
-    "@segment/top-domain" "^3.0.0"
+    "@amplitude/ua-parser-js" "0.7.11"
     blueimp-md5 "^2.10.0"
     json3 "^3.3.2"
-    lodash "^4.17.4"
-    ua-parser-js "github:amplitude/ua-parser-js#ed538f1"
+    query-string "5"
 
 amplitude@^3.5.0:
   version "3.5.0"
@@ -2727,19 +2725,9 @@ compare-versions@^3.1.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/compare-versions/-/compare-versions-3.3.0.tgz#af93ea705a96943f622ab309578b9b90586f39c3"
 
-component-cookie@^1.1.2:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/component-cookie/-/component-cookie-1.1.3.tgz#053e14a3bd7748154f55724fd39a60c01994ebed"
-  dependencies:
-    debug "*"
-
 component-emitter@^1.2.0, component-emitter@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
-
-component-url@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/component-url/-/component-url-0.2.1.tgz#4e4f4799c43ead9fd3ce91b5a305d220208fee47"
 
 compressible@~2.0.14:
   version "2.0.14"
@@ -3286,15 +3274,15 @@ debounce@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.1.0.tgz#6a1a4ee2a9dc4b7c24bb012558dbcdb05b37f408"
 
-debug@*, debug@3.1.0, debug@^3.0.1, debug@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  dependencies:
-    ms "2.0.0"
-
 debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.2, debug@^2.3.3, debug@^2.5.2, debug@^2.6.0, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
+  dependencies:
+    ms "2.0.0"
+
+debug@3.1.0, debug@^3.0.1, debug@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
     ms "2.0.0"
 
@@ -8856,7 +8844,7 @@ qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-query-string@5.1.1:
+query-string@5, query-string@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.1.1.tgz#a78c012b71c17e05f2e3fa2319dd330682efb3cb"
   dependencies:
@@ -10903,10 +10891,6 @@ typpy@^2.0.0, typpy@^2.3.1, typpy@^2.3.4:
 ua-parser-js@^0.7.9:
   version "0.7.18"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.18.tgz#a7bfd92f56edfb117083b69e31d2aa8882d4b1ed"
-
-"ua-parser-js@github:amplitude/ua-parser-js#ed538f1":
-  version "0.7.10"
-  resolved "https://codeload.github.com/amplitude/ua-parser-js/tar.gz/ed538f16f5c6ecd8357da989b617d4f156dcf35d"
 
 uc.micro@^1.0.1:
   version "1.0.5"
