@@ -3,7 +3,7 @@
     "start": "NODE_ENV=production node main.js"
   },
   "dependencies": {
-    "bull": "3.3.10",
+    "bull": "3.5.3",
     "debug": "^2.6.9",
     "draft-js": "^0.10.5",
     "lodash": "^4.17.10",
