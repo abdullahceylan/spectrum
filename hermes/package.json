@@ -1,22 +1,26 @@
 {
   "scripts": {
-    "start": "NODE_ENV=production node main.js"
+    "start": "NODE_ENV=production node main.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "bull": "3.3.10",
+    "bull": "3.5.3",
     "debug": "^2.6.9",
-    "draft-js": "^0.10.5",
+    "draft-js": "^0.11.7",
     "jsonwebtoken": "^8.3.0",
     "node-env-file": "^0.1.8",
     "now-env": "^3.1.0",
-    "postmark": "^1.6.1",
+    "postmark": "^2.0.0",
     "raven": "^2.6.3",
     "rethinkdbdash": "^2.3.31",
     "source-map-support": "^0.4.18",
     "toobusy-js": "^0.5.1",
-    "validator": "^10.6.0"
+    "validator": "^13.7.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "json-stringify-pretty-compact": "^1.2.0"
-  }
+  },
+  "snyk": true
 }
