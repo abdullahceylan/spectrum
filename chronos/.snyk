@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - bull > ioredis > debug:
+        patched: '2022-08-23T09:07:56.558Z'
+  SNYK-JS-LODASH-567746:
+    - bull > lodash:
+        patched: '2022-08-23T09:07:56.558Z'
+  'npm:moment:20170905':
+    - bull > cron-parser > moment-timezone > moment:
+        patched: '2022-08-23T09:07:56.558Z'
