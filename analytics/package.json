@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "amplitude": "^3.5.0",
-    "bull": "3.3.10",
+    "bull": "3.5.3",
     "node-env-file": "^0.1.8",
     "now-env": "^3.1.0",
     "raven": "^2.6.3",
