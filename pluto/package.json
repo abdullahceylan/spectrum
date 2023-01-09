@@ -5,11 +5,11 @@
   "dependencies": {
     "aws-sdk": "^2.296.0",
     "body-parser": "^1.18.3",
-    "bull": "^3.4.7",
+    "bull": "^3.5.3",
     "express": "^4.16.3",
     "faker": "^4.1.0",
     "http": "^0.0.0",
-    "ioredis": "^3.2.2",
+    "ioredis": "^4.0.0",
     "node-env-file": "^0.1.8",
     "now-env": "^3.1.0",
     "raven": "^2.6.3",
