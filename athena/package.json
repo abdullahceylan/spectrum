@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "bull": "3.3.10",
+    "bull": "3.17.0",
     "cryptr": "^3.0.0",
     "draft-js": "^0.10.5",
     "emoji-regex": "^6.5.1",
