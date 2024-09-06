@@ -3,9 +3,9 @@
     "start": "NODE_ENV=production node main.js"
   },
   "dependencies": {
-    "bull": "3.3.10",
+    "bull": "4.11.0",
     "debug": "^2.6.9",
-    "draft-js": "^0.10.5",
+    "draft-js": "^0.11.0",
     "lodash": "^4.17.10",
     "lodash.intersection": "^4.4.0",
     "now-env": "^3.1.0",
