@@ -6,9 +6,9 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "bull": "3.3.10",
+    "bull": "4.11.0",
     "cryptr": "^3.0.0",
-    "draft-js": "^0.10.5",
+    "draft-js": "^0.11.0",
     "emoji-regex": "^6.5.1",
     "expo-server-sdk": "^2.4.0",
     "node-env-file": "^0.1.8",
@@ -18,6 +18,6 @@
     "source-map-support": "^0.4.18",
     "toobusy-js": "^0.5.1",
     "validator": "^9.4.1",
-    "web-push": "^3.3.2"
+    "web-push": "^3.4.4"
   }
 }
